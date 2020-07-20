@@ -1,0 +1,114 @@
+body {
+	background-image: url("back.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.board {
+	width: 60%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
+}
+
+.player-0, .player-1 {
+	background: rgba(255,250,205,0.9);
+	height: 500px;
+    width: 50%;
+  	float: left;
+}
+.active{
+	background: rgba(255,255,240,0.9);
+}
+
+.player-name {
+	font-size: 40px;
+	font-weight: 100;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto;
+	margin-top: 12%;
+	position: relative;
+}
+
+.player-score {
+	font-size: 80px;
+	font-weight: 100;
+	text-align: center;
+	color: #EB4D4D;
+	margin: auto;
+	margin-top: 5%; 
+}
+
+.active .player-name, .player-score { font-weight: 300; }
+
+.current {
+	background-color: #EB4D4D;
+	margin: auto;
+	color: #fff;
+	margin-top: 28%;
+	width: 40%;
+	text-align: center;
+	padding: 18px;
+}
+
+.curlabel {
+	font-size: 18px;
+	color: #222;
+}
+
+.curscore {
+	margin-top: 5px;
+	font-size: 30px;
+}
+
+button {
+	position: absolute;
+    width: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:focus { outline: none; }
+
+.btn-new {
+	top: 23%;
+}
+
+.btn-roll {
+	top: 74%;
+}
+
+.btn-save {
+	top: 69%;
+}
+
+.dice {
+	position: absolute;
+    width: 7.5%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.winner {
+	background-color: #f7f7f7;
+}
+
+.winner .player-name {
+	font-weight: 300;
+	color: #EB4D4D; 
+}
